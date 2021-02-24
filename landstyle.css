@@ -1,17 +1,18 @@
-﻿@font-face {
+﻿/*@font-face {
   font-family: 'Montserrat';
   src: url("fonts/Montserrat-Regular.otf");
-}
+  unicode-range: U+0410-044F, U+0080-00BF, U+0000-007E;
+}*/
 body{
 	width:1440px;
-	font-family: Montserrat;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-style: normal;
 	color: rgba(31, 32, 65, 0.75);
 }
 header{
-	padding:15 100 5 100;
+	padding:10px 100px 5px 100px;
 	height:50px;
 }
 #logo{
@@ -32,7 +33,7 @@ main{
 }
 footer ul li:first-child
 {
-	margin-top:85px;
+	margin-top:90px;
 	text-transform:uppercase;
 	font-family: Montserrat;
 	font-style: normal;
@@ -52,13 +53,12 @@ a{
 }
 #action{
 	margin-left:30px;
+	margin-top:5px;
 	border: 2px solid #BC9CFF;
 	border-radius:22px;
 	text-transform:uppercase;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	color:white;
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 15px;
@@ -79,15 +79,15 @@ li{
 	line-height: 17px;
 }
 input{
-	padding:10 20 10 20;
+	padding:10px 20px 10px 20px;
 	border: 1px solid gray;
-	border-radius:5px;
+	border-radius:4px;
 	color:gray;
 }
 main p{	
 	position:relative;
-	top:830;
-	right:130;
+	top:830px;
+	right:130px;
 	text-align: right;
 }
 #arrows{
@@ -100,8 +100,6 @@ main p{
 }
 #copyright{
 	position: absolute;
-	width: 367px;
-	height: 18px;
 	left: 139px;
 	top: 1299px;
 	line-height: 17px;
