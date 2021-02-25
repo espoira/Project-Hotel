@@ -31,7 +31,8 @@ main{
 	background-image:url("images/image_5.jpg");
 	height:900px;
 }
-footer ul li:first-child
+footer ul li:first-child,
+label
 {
 	margin-top:90px;
 	text-transform:uppercase;
@@ -80,7 +81,7 @@ li{
 }
 input{
 	padding:10px 20px 10px 20px;
-	border: 1px solid gray;
+	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius:4px;
 	color:gray;
 }
@@ -89,6 +90,33 @@ main p{
 	top:830px;
 	right:130px;
 	text-align: right;
+}
+form{
+	position: absolute;
+	width: 380px;
+	height: 374px;
+	left: 140px;
+	top: 140px;
+	padding:35px 10px 30px 30px;
+	
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+#dates{
+	margin-right:20px;
+	width: 105px;
+}
+label{
+	margin-top:10px;
+	margin-bottom:25px;
+	float:left;
+}
+form input
+{
+	width:270px;
 }
 #arrows{
 	font-family: Material Icons;
