@@ -1,8 +1,8 @@
-﻿/*@font-face {
-  font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Regular.otf");
-  unicode-range: U+0410-044F, U+0080-00BF, U+0000-007E;
-}*/
+﻿@font-face {
+  font-family: 'Font Awesome';
+  src: url("fonts/FontAwesome.otf");
+}
+
 body{
 	width:1440px;
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -12,7 +12,7 @@ body{
 	color: rgba(31, 32, 65, 0.75);
 }
 header{
-	padding:10px 100px 5px 100px;
+	padding:5px 100px 0px 100px;
 	height:50px;
 }
 #logo{
@@ -55,10 +55,11 @@ a{
 	color: rgba(31, 32, 65, 0.5);
 }
 #action{
-	margin-right:30px;
+	margin-right:20px;
 	margin-top:5px;
-	border: 2px solid #BC9CFF;
+	border:none;
 	border-radius:22px;
+	padding:12px 20px 12px 20px;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -77,6 +78,19 @@ a{
 #action.enter{
 	color: #BC9CFF;
 	background:white;
+	padding:10px 20px 10px 20px;
+	margin-top:2px;
+	margin-left:2px;
+	height:36px;
+}
+.border-grad{
+	margin-right:20px;
+	margin-top:5px;
+	border-radius:22px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	float:left;
+	width:90px;
+	height:40px;
 }
 #nav,input,
 #nav li
@@ -95,7 +109,11 @@ input{
 	padding:10px 20px 10px 20px;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius:4px;
-	color:gray;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-style: normal;
+	color: rgba(31, 32, 65, 0.75);
 }
 main p{	
 	position:relative;
@@ -122,7 +140,7 @@ form{
 }
 h1{
 	margin-top:-5px;
-	margin-bottom:25px;
+	margin-bottom:18px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 29px;
@@ -141,14 +159,10 @@ form input
 {
 	margin-top:5px;
 	width:270px;		
-	font-family: Montserrat, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	font-style: normal;
-	color: rgba(31, 32, 65, 0.75);
 }
 .choose{
 	width:310px;
+	padding:12px 20px 12px 20px;
 }
 #arrows{
 	font-family: Material Icons;
@@ -167,4 +181,24 @@ form input
 }
 hr{
 	width:100%;
+}
+.li_arrow{
+	position:relative;
+	top:-5px;
+}
+.li_arrow:after{
+	position:relative;
+	top:4px;
+	font-family: Material Icons;
+	content: "keyboard_arrow_down"; 
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+}
+.fa iconki{
+	font-family: Font Awesome;
+	content: "\f081";
+	font-size: 24px;
+	line-height: 24px;
 }
