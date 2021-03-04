@@ -48,14 +48,14 @@ label
 ul{
 	list-style-type:none;
 	float:left;
-	margin-right:30px;
+	margin-right:14px;
 }
 a{
 	text-decoration:none;
 	color: rgba(31, 32, 65, 0.5);
 }
 #action{
-	margin-right:20px;
+
 	margin-top:5px;
 	border:none;
 	border-radius:22px;
@@ -92,20 +92,22 @@ a{
 	width:90px;
 	height:40px;
 }
-#nav,input,
-#nav li
+#nav, #nav li
 {
 	float:left;
+	margin-left:25px;
 }
 #nav li:first-child{
-	margin-left:154px;
+	margin-left:130px;
 }
 li{
+	margin-top:4px;
 	margin-bottom:20px;
 	margin-left:20px;
 	line-height: 17px;
 }
 input{
+	float:left;
 	padding:10px 20px 10px 20px;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius:4px;
@@ -118,11 +120,18 @@ input{
 main p{	
 	position:relative;
 	top:830px;
-	right:130px;
+	right:132px;
 	text-align: right;
 }
 footer ul:first-child li p{
-	margin-left:40px;	
+	margin-left:45px;	
+}
+footer ul li p{
+	line-height: 24px;
+}
+footer input{
+	width:210px;
+	color: rgba(31, 32, 65, 0.25);
 }
 form{
 	position: absolute;
@@ -173,9 +182,8 @@ form input
 	text-align: center;
 }
 #copyright{
-	position: absolute;
-	left: 139px;
-	top: 1299px;
+	margin-left: 105px;
+	margin-top: 20px;
 	line-height: 17px;
 	margin-bottom:20px;
 }
@@ -196,9 +204,17 @@ hr{
 	font-size: 18px;
 	line-height: 18px;
 }
-.fa iconki{
+.iconki{
+	margin-left:740px;
+}
+.iconki:after{
 	font-family: Font Awesome;
-	content: "\f081";
+	content: "\f099" "  " "\f082" "  " "\f16d";
 	font-size: 24px;
-	line-height: 24px;
+	line-height: 23px;
+	color:#BC9CFF;
+	color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
