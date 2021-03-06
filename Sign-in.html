@@ -8,14 +8,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"-->
-		<title>Отель - Главная</title>
+		<title>Отель - Войти</title>
+		<link rel="stylesheet" href="signstyle.css" type="text/css">
+
 		
 	</head>
 	
 	<body>
 		<header>
 		
-		    <img id="logo" src="pictures/logo.svg"/>
+		    <img id="logo" src="pictures/logo.svg" onclick="location.href='index.html';"/>
 			<svg id="logoText">
 				<text x="12" y="30" font-size="14pt" font-weight="bold">
 						TOXIN
@@ -32,7 +34,7 @@
 			 <li><a href='#5' class="li_arrow">Соглашения</a></li>
 		   </ul>
 		   <div class="border-grad">
-		   	<input id="action" class="enter" type="button" value="Войти" onclick="location.href='Sign-in.html';"/>
+		   	<input id="action" class="enter" type="button" value="Войти" onclick="location.href='#';"/>
 		   </div>
 		   <input id="action" type="button" value="Зарегистрироваться" onclick="location.href='Sign-up.html';"/>
 		</header>
@@ -41,6 +43,25 @@
 		
 			<form>
 				<h1>Найдём номера под <br> ваши пожелания</h1>
+				
+				<div class="sign">
+				
+					<h1>Войти</h1>
+				
+					<input type="text" value="Email" name="guests"/>
+					<input type="text" value="Пароль" name="guests"/>
+	
+					
+					<input id="action" class="choose" type="button" value="Войти"/>
+	
+					<div class="border-grad">
+						<input id="action" class="enter" type="button" value="Создать"/>
+					</div>
+					
+					<li>Нет аккаунта на Toxin?</li>
+					
+				</div>
+
 				
 				<label>Прибытие<br>
 					<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datastart"/>
@@ -66,7 +87,7 @@
 	   
 	   		   <ul>
 				 <li>
-					<img id="logo" src="pictures/logo.svg"/>
+					<img id="logo" src="pictures/logo.svg" onclick="location.href='index.html';"/>
 					<svg id="logoText">
 						<text x="12" y="30" font-size="14pt" font-weight="bold">
 								TOXIN

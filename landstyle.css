@@ -32,6 +32,7 @@ header{
 main{
 	background-image:url("images/image_5.jpg");
 	height:900px;
+	width:1440px;
 }
 footer ul li:first-child,
 label
@@ -55,7 +56,6 @@ a{
 	color: rgba(31, 32, 65, 0.5);
 }
 #action{
-
 	margin-top:5px;
 	border:none;
 	border-radius:22px;
@@ -157,7 +157,7 @@ h1{
 }
 #dates{
 	margin-right:20px;
-	width: 105px;
+	width: 108px;
 }
 label{
 	margin-top:10px;
@@ -167,10 +167,10 @@ label{
 form input
 {
 	margin-top:5px;
-	width:270px;		
+	width:276px;		
 }
 .choose{
-	width:310px;
+	width:318px;
 	padding:12px 20px 12px 20px;
 }
 #arrows{
@@ -205,16 +205,26 @@ hr{
 	line-height: 18px;
 }
 .iconki{
-	margin-left:740px;
-}
-.iconki:after{
+	margin-left:715px;
 	font-family: Font Awesome;
-	content: "\f099" "  " "\f082" "  " "\f16d";
 	font-size: 24px;
 	line-height: 23px;
+	font-weight: normal;
 	color:#BC9CFF;
-	color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.ic-1:after{
+	content: "\f099";
+}
+.ic-2:after{
+	content: "\f082";
+}
+.ic-3:after{
+	content: "\f16d";
+}
+i{
+	font-style: normal;
+	margin-right:20px;
 }

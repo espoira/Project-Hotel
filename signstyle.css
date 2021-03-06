@@ -1,0 +1,54 @@
+﻿main{
+	background-image:url("images/image_4.jpg");
+	height:753px;
+	width:1440px;
+}
+main p{
+	position:absolute;
+	right:1999px;
+}
+header{
+	padding:5px 100px 15px 100px;
+}
+form{
+	position: absolute;
+	left: 537px;
+	top: 305px;
+	padding-left:30px;
+	padding-right:30px;
+}
+h1,label,form input
+{
+	display:none;
+}
+.sign h1,.sign input{
+	display:block;
+	margin-top:10px;
+}
+.sign input{
+	color: rgba(31, 32, 65, 0.5);
+}
+.sign #action{
+	margin-top:20px;
+	height:42px;
+}
+.sign #action.enter{
+	width:92px;
+	margin-top:2px;
+	padding:0px;
+}
+.sign .border-grad{
+	float:right;
+	margin-top:30px;
+	margin-right:0px;
+	width:96px;
+	height:46px;
+}
+.sign li{
+	float:left;
+	margin-top:45px;
+	margin-left:0px;
+	list-style-type:none;
+	color:black;
+}
+
