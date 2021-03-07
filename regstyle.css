@@ -1,0 +1,51 @@
+﻿form{
+	position: absolute;
+	width: 380px;
+	height: 656px;
+	left: 540px;
+	top: 100px;
+	padding-left:30px;
+	padding-right:30px;
+}
+.sign h1, .sign #action,
+.sign li, .sign .border-grad
+{
+	display:none;
+}
+.reg h1, .reg label,
+.reg #action, .reg li,
+.reg .border-grad
+{
+	display:block;
+}
+.reg #dates{
+	width:276px;
+}
+.reg label{
+	margin-top:20px;
+	margin-bottom:0px;
+}
+.sign input{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#select input{
+	float:left;
+	width:18px;
+	margin-top:-8px;
+}
+.reg span{
+	float:left;
+	margin-top:-10px;
+	margin-right:20px;
+	margin-bottom:7px;
+	font-size: 14px;
+	line-height: 17px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform:none;
+	color: rgba(31, 32, 65, 0.5);
+}
+#vkl{
+	margin-top:7px;
+}

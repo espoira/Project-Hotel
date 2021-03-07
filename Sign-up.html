@@ -8,9 +8,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"-->
-		<title>Отель - Войти</title>
+		<title>Отель - Регистрация</title>
 		<link rel="stylesheet" href="signstyle.css" type="text/css">
-
+		<link rel="stylesheet" href="regstyle.css" type="text/css">
 		
 	</head>
 	
@@ -34,9 +34,9 @@
 			 <li><a href='#5' class="li_arrow">Соглашения</a></li>
 		   </ul>
 		   <div class="border-grad">
-		   	<input id="action" class="enter" type="button" value="Войти" onclick="location.href='#';"/>
+		   	<input id="action" class="enter" type="button" value="Войти" onclick="location.href='Sign-in.html';"/>
 		   </div>
-		   <input id="action" type="button" value="Зарегистрироваться" onclick="location.href='Sign-up.html';"/>
+		   <input id="action" type="button" value="Зарегистрироваться" onclick="location.href='#';"/>
 		</header>
 		
 		<main>
@@ -47,15 +47,53 @@
 				<div class="sign">
 				
 					<h1>Войти</h1>
+					
+					
+					<div class="reg">
+
+						<h1>Регистрация аккаунта</h1>
+						
+						<input type="text" value="Имя" name="name"/>
+						<input type="text" value="Фамилия" name="surname"/>
+						
+							<label id="select">
+								<input type="radio" value="man" name="select" checked/><span>Мужчина</span>
+								<input type="radio" value="woman" name="select"/><span>Женщина</span>
+							</label>
+
+
+						<label>Дата рождения<br>
+							<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datastart"/>
+						</label>
+						
+						<label>Данные для входа в сервис</label>
+
+					</div>
 				
-					<input type="text" value="Email" name="guests"/>
-					<input type="text" value="Пароль" name="guests"/>
+					<input type="text" value="Email" name="email"/>
+					<input type="text" value="Пароль" name="password"/>
+					
+					
+					<div class="reg">
+					
+						<span id="vkl">Получать спецпредложения</span>
+
+						<input id="action" class="choose" type="button" value="Зарегистрироваться" onclick="location.href='#';"/>
+		
+						<div class="border-grad">
+							<input id="action" class="enter" type="button" value="Войти" onclick="location.href='Sign-in.html';"/>
+						</div>
+						
+						<li>Уже есть аккаунт на Toxin</li>
+						
+					</div>
+
 	
 					
-					<input id="action" class="choose" type="button" value="Войти" onclick="location.href='#';"/>
+					<input id="action" class="choose" type="button" value="Войти"/>
 	
 					<div class="border-grad">
-						<input id="action" class="enter" type="button" value="Создать" onclick="location.href='Sign-up.html';"/>
+						<input id="action" class="enter" type="button" value="Создать"/>
 					</div>
 					
 					<li>Нет аккаунта на Toxin?</li>

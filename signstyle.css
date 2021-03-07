@@ -1,6 +1,7 @@
 ﻿main{
 	background-image:url("images/image_4.jpg");
-	height:753px;
+	background-position:0px -53px;
+	height:700px;
 	width:1440px;
 }
 main p{
@@ -13,7 +14,8 @@ header{
 form{
 	position: absolute;
 	left: 537px;
-	top: 305px;
+	top: 263px;
+	height: 363px;
 	padding-left:30px;
 	padding-right:30px;
 }
@@ -26,7 +28,7 @@ h1,label,form input
 	margin-top:10px;
 }
 .sign input{
-	color: rgba(31, 32, 65, 0.5);
+	color: rgba(31, 32, 65, 0.25);
 }
 .sign #action{
 	margin-top:20px;
@@ -49,6 +51,6 @@ h1,label,form input
 	margin-top:45px;
 	margin-left:0px;
 	list-style-type:none;
-	color:black;
+	color: #1F2041;
 }
 
