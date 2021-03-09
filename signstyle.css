@@ -1,20 +1,17 @@
 ﻿main{
 	background-image:url("images/image_4.jpg");
-	background-position:0px -53px;
-	height:700px;
+	margin-top:15px;
+	height:685px;
 	width:1440px;
 }
 main p{
 	position:absolute;
 	right:1999px;
 }
-header{
-	padding:5px 100px 15px 100px;
-}
 form{
 	position: absolute;
-	left: 537px;
-	top: 263px;
+	left: 530px;
+	top: 250px;
 	height: 363px;
 	padding-left:30px;
 	padding-right:30px;
@@ -25,10 +22,11 @@ h1,label,form input
 }
 .sign h1,.sign input{
 	display:block;
-	margin-top:10px;
+	margin-top:5px;
 }
 .sign input{
 	color: rgba(31, 32, 65, 0.25);
+	margin:5px 0px 5px 0px;
 }
 .sign #action{
 	margin-top:20px;
@@ -41,14 +39,14 @@ h1,label,form input
 }
 .sign .border-grad{
 	float:right;
-	margin-top:30px;
+	margin-top:26.5px;
 	margin-right:0px;
 	width:96px;
 	height:46px;
 }
 .sign li{
 	float:left;
-	margin-top:45px;
+	margin-top:42px;
 	margin-left:0px;
 	list-style-type:none;
 	color: #1F2041;
