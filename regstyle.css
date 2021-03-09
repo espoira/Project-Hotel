@@ -1,9 +1,9 @@
 ﻿form{
 	position: absolute;
 	width: 380px;
-	height: 656px;
-	left: 540px;
-	top: 100px;
+	height: 640px;
+	left: 532px;
+	top: 103px;
 	padding-left:30px;
 	padding-right:30px;
 }
@@ -46,6 +46,51 @@
 	text-transform:none;
 	color: rgba(31, 32, 65, 0.5);
 }
+label input[type=radio] {
+  display: none;
+}
+#select span {
+  position: relative;
+  padding: 3px 0px 3px 25px;
+}
+#select span:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+}
+#select input:checked ~ span:before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  top: 4px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+#select input:checked ~ span:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BC9CFF;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+}
+
 #vkl{
 	margin-top:7px;
+}
+.sign .border-grad
+{
+	margin-top:20px;
+}
+.sign li{
+	margin-top:35px;
 }
