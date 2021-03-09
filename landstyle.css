@@ -13,7 +13,7 @@ body{
 	margin: 0px;
 }
 header{
-	padding:15px 100px 0px 100px;
+	padding:15px 0px 0px 100px;
 	height:50px;
 }
 #logo{
@@ -95,14 +95,12 @@ a{
 #nav, #nav li
 {
 	float:left;
-	margin-left:25px;
-	margin-top:8.5px;
 }
 #nav li:first-child{
 	margin-left:130px;
 }
 li{
-	margin:6px 0px 20px 20px;
+	margin:3px 0px 20px 25px;
 	line-height: 17px;
 }
 input{
@@ -122,6 +120,9 @@ main p{
 	right:132px;
 	text-align: right;
 }
+footer li{
+	margin:20px 0px 20px 20px;
+}
 footer ul:first-child{
 	margin-top:5px;
 }
@@ -129,6 +130,7 @@ footer ul:first-child li p{
 	margin-left:45px;	
 }
 footer ul li p{
+	margin-top:-4px;
 	line-height: 24px;
 }
 footer input{
