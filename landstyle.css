@@ -10,9 +10,10 @@ body{
 	line-height: 24px;
 	font-style: normal;
 	color: rgba(31, 32, 65, 0.75);
+	margin: 0px;
 }
 header{
-	padding:5px 100px 0px 100px;
+	padding:15px 100px 0px 100px;
 	height:50px;
 }
 #logo{
@@ -25,13 +26,12 @@ header{
 }
 #logoText{
 	float:left;
-	margin-left:85px;
-	margin-right:-150px;
-	margin-bottom:-90px;
+	margin: 0px -150px -90px 85px;
 }
 main{
 	background-image:url("images/image_5.jpg");
-	height:900px;
+	background-position:0px -68px;
+	height:832px;
 	width:1440px;
 }
 footer ul li:first-child,
@@ -96,14 +96,13 @@ a{
 {
 	float:left;
 	margin-left:25px;
+	margin-top:8.5px;
 }
 #nav li:first-child{
 	margin-left:130px;
 }
 li{
-	margin-top:4px;
-	margin-bottom:20px;
-	margin-left:20px;
+	margin:6px 0px 20px 20px;
 	line-height: 17px;
 }
 input{
@@ -119,9 +118,12 @@ input{
 }
 main p{	
 	position:relative;
-	top:830px;
+	top:762px;
 	right:132px;
 	text-align: right;
+}
+footer ul:first-child{
+	margin-top:5px;
 }
 footer ul:first-child li p{
 	margin-left:45px;	
@@ -138,7 +140,7 @@ form{
 	width: 380px;
 	height: 374px;
 	left: 150px;
-	top: 185px;
+	top: 150px;
 	padding:35px 0px 30px 30px;
 	
 	background: #FFFFFF;
@@ -182,10 +184,8 @@ form input
 	text-align: center;
 }
 #copyright{
-	margin-left: 105px;
-	margin-top: 20px;
+	margin: 20px 0px 24px 105px;
 	line-height: 17px;
-	margin-bottom:20px;
 }
 hr{
 	width:100%;
