@@ -65,11 +65,12 @@ label input[type=radio] {
 }
 #select input:checked ~ span:before {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   left: 4px;
   top: 4px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border:none;
 }
 #select input:checked ~ span:after {
   content: "";
