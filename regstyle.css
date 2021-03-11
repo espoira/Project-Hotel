@@ -29,16 +29,14 @@
 	margin-top:5px;
 	margin-bottom:5px;
 }
-#select input{
-	float:left;
+
+/*#select input{
 	width:18px;
 	margin-top:-8px;
-}
+}*/
 .reg span{
 	float:left;
-	margin-top:-10px;
-	margin-right:20px;
-	margin-bottom:7px;
+	margin:-10px 20px 7px 0px;
 	font-size: 14px;
 	line-height: 17px;
 	font-style: normal;
@@ -47,7 +45,7 @@
 	color: rgba(31, 32, 65, 0.5);
 }
 label input[type=radio] {
-  display: none;
+  	display:none;
 }
 #select span {
   position: relative;
@@ -84,13 +82,50 @@ label input[type=radio] {
   top: 0px;
 }
 
-#vkl{
-	margin-top:7px;
+/*#vkl input{
+	width:12px;
+	margin-top:-12px;
+}*/
+#vkl span {
+  margin:-15px 0px 0px 0px;
+  position: relative;
+  padding: 2px 0px 5px 51px;
 }
+.disc{
+	margin-left:-55px;
+}
+#vkl span:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  left: 0px;
+  top: 0px;
+}
+#vkl input:checked ~ span:before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  top: 4px;
+  background: #ccc;
+}
+.disc input:checked ~ span:before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 14px;
+  top: 4px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
 .sign .border-grad
 {
-	margin-top:20px;
+	margin-top:22px;
 }
 .sign li{
-	margin-top:35px;
+	margin-top:37px;
 }
