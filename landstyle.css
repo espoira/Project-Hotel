@@ -56,7 +56,7 @@ a{
 	color: rgba(31, 32, 65, 0.5);
 }
 #action{
-	margin-top:5px;
+	margin-top:4px;
 	border:none;
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
@@ -84,8 +84,7 @@ a{
 	height:36px;
 }
 .border-grad{
-	margin-right:20px;
-	margin-top:5px;
+	margin:4px 25px 0px 5px;
 	border-radius:22px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	float:left;
@@ -95,12 +94,13 @@ a{
 #nav, #nav li
 {
 	float:left;
+	margin-top:8px;
 }
 #nav li:first-child{
-	margin-left:130px;
+	margin-left:157px;
 }
 li{
-	margin:3px 0px 20px 25px;
+	margin:20px 0px 20px 20px;
 	line-height: 17px;
 }
 input{
@@ -119,9 +119,6 @@ main p{
 	top:762px;
 	right:132px;
 	text-align: right;
-}
-footer li{
-	margin:20px 0px 20px 20px;
 }
 footer ul:first-child{
 	margin-top:5px;
@@ -177,14 +174,6 @@ form input
 	width:318px;
 	padding:12px 20px 12px 20px;
 }
-#arrows{
-	font-family: Material Icons;
-	font-size: 24px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-}
 #copyright{
 	margin: 20px 0px 24px 105px;
 	line-height: 17px;
@@ -194,17 +183,18 @@ hr{
 }
 .li_arrow{
 	position:relative;
-	top:-5px;
+	top:-11px;
 }
 .li_arrow:after{
 	position:relative;
-	top:4px;
+	top:7px;
 	font-family: Material Icons;
 	content: "keyboard_arrow_down"; 
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
-	line-height: 18px;
+	font-size: 24px;
+	line-height: 24px;
+	width:24px;
 }
 .iconki{
 	margin-left:715px;
