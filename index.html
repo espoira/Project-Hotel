@@ -43,15 +43,21 @@
 				<h1>Найдём номера под <br> ваши пожелания</h1>
 				
 				<label>Прибытие<br>
-					<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datastart"/>
+					<input id="dates" type="date" value="ДД.ММ.ГГГГ" name="datastart"/>
 				</label>
 				<label>Выезд<br>
-					<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datafinish"/>
+					<input id="dates" type="date" value="ДД.ММ.ГГГГ" name="datafinish"/>
 				</label>
-				<label>Гости<br>
-					<input type="text" value="Сколько гостей" name="guests"/>
-				</label>
+				<label class="arrow" id="down">Гости<br></label>
+					<select> 
+						<option value="">Сколько гостей</option>
+						<option value="">Взрослые</option>
+						<option value="">Дети</option>
+						<option value="">Младенцы</option>
+						<option value="">Очистить/Применить</option>
+					</select>
 				
+				<label class="arrow" id="right"></label>
 				<input id="action" class="choose" type="button" value="Подобрать номер"/>
 			
 			</form>
@@ -76,7 +82,7 @@
 				 </li> 
 				 <li><p>Бронирование номеров в лучшем <br>
 						отеле 2019 года по версии <br>
-						ассоциации "Отельные взгляды" </p></li>
+						ассоциации &laquo; Отельные взгляды &raquo; </p></li>
 			   </ul>
 
 			   <ul>
