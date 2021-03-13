@@ -20,17 +20,24 @@ h1,label,form input
 {
 	display:none;
 }
-.sign h1,.sign input{
+.sign h1,.sign input,
+.sign label{
 	display:block;
 	margin-top:5px;
 }
 .sign input{
 	color: rgba(31, 32, 65, 0.25);
 	margin:5px 0px 5px 0px;
+	width:276px;
 }
-.sign #action{
+.sign #action
+{
 	margin-top:20px;
 	height:42px;
+	width:318px;
+}
+#right:after{
+	top:26px;
 }
 .sign #action.enter{
 	width:92px;
@@ -51,4 +58,3 @@ h1,label,form input
 	list-style-type:none;
 	color: #1F2041;
 }
-
