@@ -11,7 +11,12 @@ body{
 	font-style: normal;
 	color: rgba(31, 32, 65, 0.75);
 	margin: 0px;
+	animation: show 0.55s;
 }
+@keyframes show {
+	from {opacity: 0;} to {opacity: 1;}
+}
+
 header{
 	padding:15px 0px 0px 100px;
 	height:50px;
@@ -138,7 +143,7 @@ form{
 	position: absolute;
 	width: 380px;
 	height: 374px;
-	left: 150px;
+	left: 140px;
 	top: 150px;
 	padding:35px 0px 30px 30px;
 	
@@ -182,19 +187,21 @@ hr{
 }
 .li_arrow{
 	position:relative;
-	top:-11px;
+	top:-8px;
+	margin-right:7px;
 }
 .li_arrow:after{
 	position:relative;
-	top:7px;
-	font-family: Material Icons;
-	content: "keyboard_arrow_down"; 
+	top:3.5px;
+	left:5px;
+	/*font-family: Material Icons;
+	content: "keyboard_arrow_down";*/
+	font-family: Font Awesome;
+	content:"\f107";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 24px;
-	height:24px;
-	width:24px;
 }
 .iconki{
 	margin-left:715px;
@@ -226,6 +233,7 @@ select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	background:white;
 }
 select option:first-child{
 	display:none;
@@ -255,4 +263,7 @@ select option:first-child{
 	content:"\f061";
 	content:"\279C";
 	color:white;
+}
+select option:nth-child(9){
+	color:#BC9CFF;
 }
