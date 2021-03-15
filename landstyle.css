@@ -267,3 +267,24 @@ select option:first-child{
 select option:nth-child(9){
 	color:#BC9CFF;
 }
+.empty{
+	visibility:hidden;
+}
+.arrows-down{
+	width:170px;
+	margin-bottom:3px;
+}
+.arrows-down:after{
+	position:relative;
+	top:-32px;
+	right:32px;
+	float:right;
+	font-family: Font Awesome;	
+	content:"\f107";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.5);
+}
+

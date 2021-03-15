@@ -9,10 +9,10 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"-->
 		<title>Отель - Главная</title>
-		
+		   
 	</head>
 	
-	<body class="body_visible">
+	<body>
 		<header>
 		
 		    <img id="logo" src="pictures/logo.svg"/>
@@ -24,17 +24,19 @@
 			</svg>
 		  
 		     
-<ul id="nav">
+		   <ul id="nav">
 			 <li><a href='#1'>О нас</a></li>
 			 <li><a href='#2' class="li_arrow">Услуги</a></li>
 			 <li><a href='#3'>Вакансии</a></li>
 			 <li><a href='#4'>Новости</a></li>
 			 <li><a href='#5' class="li_arrow">Соглашения</a></li>
 		   </ul>
+		   
 		   <div class="border-grad">
 		   	<input id="action" class="enter" type="button" value="Войти" onclick="location.href='Sign-in.html';"/>
 		   </div>
 		   <input id="action" type="button" value="Зарегистрироваться" onclick="location.href='Sign-up.html';"/>
+		
 		</header>
 		
 		<main>
@@ -42,11 +44,11 @@
 			<form>
 				<h1>Найдём номера под <br> ваши пожелания</h1>
 				
-				<label>Прибытие<br>
-					<input id="dates" type="date" value="ДД.ММ.ГГГГ" name="datastart"/>
+				<label class="arrows-down">Прибытие<br>
+					<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datastart"/>
 				</label>
-				<label>Выезд<br>
-					<input id="dates" type="date" value="ДД.ММ.ГГГГ" name="datafinish"/>
+				<label class="arrows-down">Выезд<br>
+					<input id="dates" type="text" value="ДД.ММ.ГГГГ" name="datafinish"/>
 				</label>
 				<label class="arrow" id="down">Гости<br></label>
 					<select> 
@@ -64,7 +66,7 @@
 					</select>
 				
 				<label class="arrow" id="right"></label>
-				<input id="action" class="choose" type="button" value="Подобрать номер"/>
+				<input id="action" class="choose" type="button" value="Подобрать номер" onclick="location.href='Room-Search.html';"/>
 			
 			</form>
 
