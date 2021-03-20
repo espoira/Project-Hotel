@@ -19,8 +19,9 @@ body{
 }
 
 header{
-	padding:15px 0px 0px 100px;
 	height:50px;
+	padding:15px 0px 15px 100px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
 #logo{
 	position: relative;
@@ -35,7 +36,7 @@ header{
 	margin: 0px -150px -90px 85px;
 }
 footer ul li:first-child,
-label
+label,option
 {
 	margin-top:90px;
 	text-transform:uppercase;
@@ -103,7 +104,7 @@ li{
 	margin:20px 0px 20px 20px;
 	line-height: 17px;
 }
-input{
+input,select{
 	float:left;
 	padding:10px 20px 10px 20px;
 	border: 1px solid rgba(31, 32, 65, 0.25);
@@ -134,29 +135,34 @@ footer ul{
 
 
 main{
-	margin:30px 135px 30px 135px;
+	margin:30px 115px 30px 135px;
 }
 main div{	
 	float:left;
-	width:270px;
+	width:235px;
 	height:700px;
-	margin-right:35px;
-	background:aqua;
-	padding:5px 5px 5px 5px;
+	margin-right:75px;
+	padding:15px 0px 0px 5px;
 }
 img{
 	display:block;
+	border-radius: 4px 4px 0px 0px;
 }
 
 h1{
 	float:left;
+	margin-left:10px;
+	font-weight: bold;
+	font-size: 25.5px;
+	line-height: 29px;
+	color: #1F2041;
 }
 table{
 	float:left;
+	border-spacing:10px 15px;
 }
 td{
-	padding:9px 4.5px 8px 4.5px;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 	border-radius: 4px;
 }
 td hr, td .iconki{
@@ -169,13 +175,18 @@ h3{
 	float:left;
 	position:relative;
 	margin:25px 0px 15px 21px ;
+	font-weight: bold;
+	color: #1F2041;
 }
 .cost{
 	font-weight:bold;
 }
-p{
+table p{
 	float:right;
 	margin:26px 17px 0px 0px;
+}
+#pages{
+	box-shadow: none;
 }
 
 .star:after{
@@ -185,6 +196,9 @@ p{
 .no-star:after{
 	content: "\f006";
 	margin-right:-15px;
+}
+#star{
+	margin-left:-5px;
 }
 
 
@@ -236,4 +250,59 @@ hr{
 i{
 	font-style: normal;
 	margin-right:20px;
+}
+
+
+#dates{
+	width:220px;
+	margin:5px 0px 25px 0px;
+}
+select{
+	margin-top:-5px;
+	margin-bottom:25px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background:white;
+	width:260px;
+}
+select option:first-child{
+	display:none;
+}
+select option:nth-child(9){
+	color:#BC9CFF;
+}
+.empty{
+	visibility:hidden;
+}
+.arrow:after{
+	position:relative;
+	top:-58px;
+	right:-8px;
+	float:right;
+	font-family: Font Awesome;	
+	content:"\f107";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.5);
+}
+h4{
+	font-weight: bold;
+	color: #1F2041;
+}
+#info{
+	margin:-12px 0px 0px 20px;
+	font-size: 11.5px;
+	line-height: 15px;
+	width:270px;
+}
+#cost
+{
+	width:215px;
+}
+.smalltext{
+	left:-18px;
+	position:relative;
 }
