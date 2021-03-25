@@ -86,14 +86,14 @@
 				
 				<br>
 				<label>Правила дома<br></label>
-				   <p><input type="checkbox" name="rules" value=""> Можно курить</p>
-				   <p><input type="checkbox" name="rules" value="" checked> Можно с питомцами</p>
-				   <p><input type="checkbox" name="rules" value="" checked> Можно пригласить гостей<br> (до 10 человек)</p>
+				   <p id="check"><input type="checkbox" name="rules" value=""><span> Можно курить</span></p>
+				   <p id="check"><input type="checkbox" name="rules" value="" checked><span> Можно с питомцами</span></p>
+				   <p id="check"><input type="checkbox" name="rules" value="" checked><span> Можно пригласить гостей<br> (до 10 человек)</span></p>
 				<br>
 				<label>Доступность<br></label>
-				<h4><input type="checkbox" name="dostup"> Широкий коридор</h4>
+				<h4 id="check"><input type="checkbox" name="dostup"><span> Широкий коридор</span></h4>
 				<p id="info">Ширина коридоров в номере<br> не менее 91 см.</p>
-				<h4><input type="checkbox" name="dostup"> Помощник для инвалидов</h4>
+				<h4 id="check"><input type="checkbox" name="dostup"><span> Помощник для инвалидов</span></h4>
 				<p id="info">На 1 этаже вас встретит специалист<br> и проводит до номера.</p>
 				<br>
 
@@ -114,12 +114,12 @@
 				</label>
 
 				<label class="arrow-show">Дополнительные удобства<br></label>
-					<p><input type="checkbox" name="add"> Завтрак</p>
-				   	<p><input type="checkbox" name="add" checked> Письменный стол</p>
-				   	<p><input type="checkbox" name="add" checked> Стул для кормления</p>
-				   	<p><input type="checkbox" name="add" checked> Кроватка</p>
-				   	<p><input type="checkbox" name="add"> Телевизор</p>
-					<p><input type="checkbox" name="add"> Шампунь</p>			
+					<p id="check"><input type="checkbox" name="add"><span> Завтрак</span></p>
+				   	<p id="check"><input type="checkbox" name="add" checked><span> Письменный стол</span></p>
+				   	<p id="check"><input type="checkbox" name="add" checked><span> Стул для кормления</span></p>
+				   	<p id="check"><input type="checkbox" name="add" checked><span> Кроватка</span></p>
+				   	<p id="check"><input type="checkbox" name="add"><span> Телевизор</span></p>
+					<p id="check"><input type="checkbox" name="add"><span> Шампунь</span></p>			
 
 			</div>
 			
@@ -291,7 +291,7 @@
 				<tr>
 				
 					<td colspan="3" align="center" id="pages">
-						1 2 3 ... 15
+						<span class="numbers">1 2 3 ... 15</span>
 						<br><br>
 						1 - 12 из 100+ вариантов аренды
 					</td>

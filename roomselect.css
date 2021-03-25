@@ -324,7 +324,7 @@ h4{
 .costs{
 	float:right;
 	position:relative;
-	margin:-15px -30px 12px 0px;
+	margin:-15px -30px 10px 0px;
 	font-size: 12px;
 	line-height: 15px;
 	text-transform: uppercase;
@@ -337,14 +337,14 @@ h4{
 }
 .ui-slider.ui-slider-horizontal {
 	position: relative;
-    background: #FFFFFF;
+    background: #fff;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius:3px;
     height: 5px;
 }
 .ui-slider .ui-slider-handle {
  	margin-top: -1px;
-	font-size: 8px;
+	font-size: 5px;
     border-radius: 50%;
     border: 2px solid white; 
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
@@ -359,11 +359,76 @@ h4{
 .ui-slider .ui-slider-handle:after {
      content: "";
 	 position: absolute;
-	 top:-6px;
-	 left: -6px;
-	 width: 18px;
-	 height: 18px;
+	 top:-4px;
+	 left: -5px;
+	 width: 12px;
+	 height: 12px;
 	 border-radius: 50%;
 	 border: 2px solid white; 
 	 background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
+
+input[type=checkbox] {
+  	display:none;
+}
+#check {
+  position: relative;
+  padding: 0px 0px 0px 28px;
+}
+#check span:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  left: 0px;
+  top: 0px;
+}
+#check input:checked ~ span:before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  border:1px solid #BC9CFF;
+}
+#check input:checked ~ span:after {
+	position: absolute;
+	left:3px;
+	top:1px;
+	font-family: Font Awesome;
+	content: "\f00c";
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.numbers{
+	padding:0px 0px 0px 5px;
+}
+.numbers:before {
+	position: relative;
+	left:0px;
+	width: 25px;
+  	height: 25px;
+  	border-radius:50%;
+	content: "1";
+	color:#fff;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.numbers:after {
+	position: absolute;
+	width: 25px;
+  	height: 25px;
+  	border-radius:50%;
+	font-family: Font Awesome;
+	content: "\f061";
+	color:#fff;
+	font-weight:lighter;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
