@@ -2,12 +2,24 @@
   font-family: 'Font Awesome';
   src: url("fonts/FontAwesome.otf");
 }
+@font-face {
+  font-family: 'Material Icons-1';
+  src: url("fonts/IcoMoon-Free.ttf");
+}
+@font-face {
+  font-family: 'Material Icons-2';
+  src: url("fonts/ElegantIcons.ttf");
+}
+@font-face {
+  font-family: 'Material Icons-3'; 
+  src: url("fonts/pictonic.ttf");
+}
 
 body{
 	width:1440px;
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 24px;
 	font-style: normal;
 	font-weight:normal;
 	color: rgba(31, 32, 65, 0.75);
@@ -124,7 +136,7 @@ input,select{
 footer ul:first-child{
 	margin-top:5px;
 }
-footer ul:first-child li p{
+footer ul li:last-child p{
 	margin-left:45px;	
 }
 footer ul li p{
@@ -138,24 +150,40 @@ footer input{
 footer ul{
 	margin-bottom:90px;
 }
+footer #logo, footer #logoText {
+	margin-top:-10px;
+}
 
 p{
 	font-weight:bold;
 	margin-top:0px;
-}
-table ul{
-	margin-top:-10px;
-	margin-left:-60px;
-	list-style-type:disc;
 }
 table{
 	display:block;
 	margin:50px 50px 50px 130px;
 }
 td{
-	padding:10px 100px 0px 0px;
-	width:380px;
+	padding:10px 30px 0px 0px;
+	width:360px;
 }
+table ul{
+	margin-top:-10px;
+	margin-left:-60px;
+	list-style-type:disc;
+}
+td ul li:before{
+	position:relative;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:rgba(31, 32, 65, 0.25);
+}
+
+#otmena{
+	position:relative;
+	top:-30px;
+}
+
 form{
 	width: 380px;
 	height: 500px;
@@ -168,11 +196,10 @@ form{
 	border-radius: 4px;
 }
 h1{
-	margin-top:-5px;
-	margin-bottom:18px;
+	margin:0px 0px 25px 0px;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 20px;
+	line-height: 24px;
 	color: #1F2041;
 }
 #dates{
@@ -180,8 +207,7 @@ h1{
 	width: 108px;
 }
 label{
-	margin-top:8px;
-	margin-bottom:25px;
+	margin-top:-5px;
 	float:left;
 }
 form input, select
@@ -194,14 +220,42 @@ form input, select
 }
 div{
 	float:left;
-	margin-bottom:25px;
+	margin:10px 0px 0px 0px;
 }
+
+#inf:after{
+	position:relative;
+	top:2px;
+	content:"\24D8";
+	font-size:24px;
+	color: rgba(31, 32, 65, 0.25);
+}
+
 #sum{
-	margin-left:45px;
+	margin-left:20px;
 }
 #sum span{
 	float:right;
+	margin-top:2px;
 }
+#last{
+	position:relative;
+	top:7px;
+}
+form h3{
+	position:relative;
+	top:-20px;
+	margin-bottom:0px;
+}
+h3{
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+}
+h3 span{
+	color:rgba(31, 32, 65, 0.25);
+}
+
 
 #copyright{
 	margin: 20px 0px 24px 105px;
@@ -284,10 +338,16 @@ select option:first-child{
 	content:"\f107";
 }
 #right:after{
-	top:10px;
-	content:"\f061";
-	content:"\279C";
+	position:relative;
+	top:-8px;
+	left:-12px;
+	content:"\02ff";
 	color:white;
+	font-size:54px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 select option:nth-child(9){
 	color:#BC9CFF;
@@ -308,4 +368,36 @@ select option:nth-child(9){
 	font-size: 24px;
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.5);
+}
+
+
+td div{
+	margin-bottom:30px;
+	line-height:24px;
+}
+tr td:last-child div{
+	line-height:18px;
+}
+
+#pic:after{
+	position:relative;
+	top:18px;	
+	font-size: 48px;
+	line-height:47px;
+	margin:0px 15px 0px 7px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pic-1:after{
+	font-family: Material Icons-1;
+	content:"\e9df";
+}
+.pic-2:after{
+	font-family: Material Icons-2;
+	content:"\e0fd";
+}
+.pic-3:after{
+	font-family: Material Icons-3;
+	content:"\e0a7";
 }
