@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="toxin.ico" type="image/x-icon">
-		<link rel="stylesheet" href="roomselect.css" type="text/css">
+		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"-->
@@ -14,24 +14,53 @@
 		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="js/jquery-ui.css" type="text/css">
 		<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
-				<script type="text/javascript">
+			<script type="text/javascript">
 				$(document).ready(function(){
-					$("#costs").slider({
-					        animate: "slow",
-					        range: true,    
-					        values: [ 30, 65 ]
-							
-					    });
+					$(function(){
+						$("#costs").slider({
+						 	animate: "slow",
+						    range: true,    
+						    values: [ 30, 65 ]
+						});							
+					});
 				});
+			</script>
 
-				</script>
+		<!--link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"-->
+		<link rel="stylesheet" href="js/base_jquery-ui.css" type="text/css">	
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			/* Локализация datepicker */
+			$.datepicker.regional['ru'] = {
+				closeText: 'Закрыть',
+				prevText: 'Предыдущий',
+				nextText: 'Следующий',
+				currentText: 'Сегодня',
+				monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+				monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+				dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+				dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+				dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+				weekHeader: 'Не',
+				dateFormat: 'dd.mm.yy',
+				firstDay: 1,
+				isRTL: false,
+				showMonthAfterYear: false,
+				yearSuffix: ''
+			};
+			$.datepicker.setDefaults($.datepicker.regional['ru']);
+	
+		</script>
+		
+		<link rel="stylesheet" href="roomselect.css" type="text/css">
 
 	</head>
+	
 	
 	<body>
 		<header>
 		
-		    <img id="logo" src="pictures/logo.svg"/>
+		    <img id="logo" src="pictures/logo.svg" onclick="location.href='index.html';"/>
 			<svg id="logoText">
 				<text x="12" y="30" font-size="14pt" font-weight="bold">
 						TOXIN
@@ -61,6 +90,11 @@
 			
 				<label class="arrow">Даты пребывания в отеле<br>
 					<input id="dates" type="text" value="19 авг - 23 авг" name="dates"/>
+						<script>
+							$(function(){
+								$("#dates").datepicker();
+							});
+						</script>
 				</label>
 				
 				<label class="arrow">Гости<br>
@@ -81,7 +115,7 @@
 				
 				<label id="diapazon">Диапазон цены<br></label>
 				<span class="costs">5000Р - 10 000Р</span>
-				<div id="costs"></div><br>
+				<div id="costs"></div><br><br>			
 				<p id="info" class="smalltext">Стоимость за сутки пребывания в номере</p>
 				
 				<br>
@@ -129,7 +163,7 @@
 			
 				<tr>
 					<td>
-						<img src="images/room_01.jpg"/>
+						<img src="images/room_01.jpg" onclick="location.href='Room-details.html';"/>
 						<h3>№ 888</h3>
 						<p><span class="cost">9990Р </span> в сутки</p>
 						<br><hr>
@@ -291,7 +325,7 @@
 				<tr>
 				
 					<td colspan="3" align="center" id="pages">
-						<span class="numbers">1 2 3 ... 15</span>
+						<span class="numbers">&nbsp; 2 3 ... 15 &nbsp;</span>
 						<br><br>
 						1 - 12 из 100+ вариантов аренды
 					</td>
@@ -311,7 +345,7 @@
 	   
 	   		   <ul>
 				 <li>
-					<img id="logo" src="pictures/logo.svg"/>
+					<img id="logo" src="pictures/logo.svg" onclick="location.href='index.html';"/>
 					<svg id="logoText">
 						<text x="12" y="30" font-size="14pt" font-weight="bold">
 								TOXIN

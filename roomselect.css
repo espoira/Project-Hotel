@@ -359,7 +359,7 @@ h4{
 .ui-slider .ui-slider-handle:after {
      content: "";
 	 position: absolute;
-	 top:-4px;
+	 top:-5px;
 	 left: -5px;
 	 width: 12px;
 	 height: 12px;
@@ -431,4 +431,31 @@ input[type=checkbox] {
 	font-weight:lighter;
 	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
+
+
+.ui-datepicker {
+	font-family:Montserrat, Arial, Helvetica, sans-serif;
+	color:#BC9CFF;
+	padding:10px 16px 25px 16px;
+}
+.ui-datepicker-header {	
+	background: white;
+	margin-bottom: 20px;
+	font-size:18px;
+	font-weight: bold;
+	border: none;
+}
+
+.ui-datepicker .ui-state-active {
+	background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius:50%;
+	border: none;
+}
+.ui-datepicker .ui-state-highlight {
+	color:white;
+	background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius:50%;
+	border: none;
+}
+
 
