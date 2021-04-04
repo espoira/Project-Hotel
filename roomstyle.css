@@ -160,15 +160,30 @@ p{
 }
 table{
 	display:block;
+	position:relative;
+	top:35px;
 	margin:50px 50px 50px 130px;
 }
 td{
 	padding:10px 30px 0px 0px;
 	width:360px;
 }
+tr td{
+	vertical-align:top;
+}
+tr:first-child td:first-child div{
+	line-height:14px;
+	margin:2px 0px 12px 0px;
+}
+td h3{
+	margin-bottom:8px;
+}
+td div{
+	margin-bottom:15px;
+}
+
 table ul{
-	margin-top:-10px;
-	margin-left:-60px;
+	margin:-3px 0px 60px -40px;
 	list-style-type:disc;
 }
 td ul li:before{
@@ -178,17 +193,33 @@ td ul li:before{
 	border-radius:50%;
 	background:rgba(31, 32, 65, 0.25);
 }
+ul li:first-child {
+	margin-top:15px;
+}
+td ul li{
+	margin-bottom:-9px;
+	line-height:24px;
+}
+#otmena h3{
+	margin-bottom:20px;
+}
+tr:last-child td:first-child h3{
+	margin-left:20px;
+}
+tr:last-child h3{
+	margin-top:6px;
+}
 
-#otmena{
-	position:relative;
-	top:-30px;
+tr:first-child td div{
+	line-height:18px;
 }
 
 form{
 	width: 380px;
 	height: 500px;
 	padding:35px 0px 30px 30px;
-	
+	position:relative;
+	top:20px;
 	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -244,8 +275,8 @@ div{
 }
 form h3{
 	position:relative;
-	top:-20px;
-	margin-bottom:0px;
+	top:-5px;
+	margin-bottom:12px;
 }
 h3{
 	font-weight: bold;
@@ -370,20 +401,11 @@ select option:nth-child(9){
 	color: rgba(31, 32, 65, 0.5);
 }
 
-
-td div{
-	margin-bottom:30px;
-	line-height:24px;
-}
-tr td:last-child div{
-	line-height:18px;
-}
-
 #pic:after{
 	position:relative;
-	top:18px;	
+	top:14px;	
 	font-size: 48px;
-	line-height:47px;
+	line-height:40.8px;
 	margin:0px 15px 0px 7px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
@@ -400,4 +422,19 @@ tr td:last-child div{
 .pic-3:after{
 	font-family: Material Icons-3;
 	content:"\e0a7";
+}
+
+.pic{
+	float:left;
+	margin:62px 0px 50px -20px;
+}
+.otziv{
+	float:left;
+	margin:-2px 0px -2px -5px;
+}
+.otziv p{
+	font-weight:normal;
+}
+#diagr{
+	margin-top:20px;
 }
