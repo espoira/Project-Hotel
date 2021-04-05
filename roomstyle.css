@@ -184,14 +184,17 @@ td div{
 
 table ul{
 	margin:-3px 0px 60px -40px;
-	list-style-type:disc;
+	list-style-type:none;
 }
 td ul li:before{
 	position:relative;
-	width:12px;
-	height:12px;
-	border-radius:50%;
-	background:rgba(31, 32, 65, 0.25);
+	top:2px;
+	font-family:Font Awesome;
+	content:"\25CF";
+	font-size:26px;
+	line-height: 12px;
+	margin:0px 8px 0px -24px;
+	color:rgba(31, 32, 65, 0.25);
 }
 ul li:first-child {
 	margin-top:15px;
@@ -212,6 +215,10 @@ tr:last-child h3{
 
 tr:first-child td div{
 	line-height:18px;
+}
+#otmena{
+	position:relative;
+	left:-24px;
 }
 
 form{
@@ -435,6 +442,59 @@ select option:nth-child(9){
 .otziv p{
 	font-weight:normal;
 }
+
 #diagr{
 	margin-top:20px;
+}
+tr:first-child .otziv {
+	margin:45px 0px 0px 35px;
+	line-height:2px;
+}
+.first:before{
+	position:relative;
+	top:2px;
+	font-family:Font Awesome;
+	content:"\25CF";
+	font-size:28px;
+	line-height: 12px;
+	margin:0px 4px 0px -16px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFE39C), to(#FFBA9C));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.second:before{
+	position:relative;
+	top:2px;
+	font-family:Font Awesome;
+	content:"\25CF";
+	font-size:28px;
+	line-height: 12px;
+	margin:0px 4px 0px -16px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.third:before{
+	position:relative;
+	top:2px;
+	font-family:Font Awesome;
+	content:"\25CF";
+	font-size:28px;
+	line-height: 12px;
+	margin:0px 4px 0px -16px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.none:before{
+	position:relative;
+	top:2px;
+	font-family:Font Awesome;
+	content:"\25CF";
+	font-size:28px;
+	line-height: 12px;
+	margin:0px 4px 0px -16px;
+	background: -webkit-gradient(linear, left top, left bottom, from( #CCCCCC), to(#1F2041));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
