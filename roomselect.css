@@ -307,7 +307,7 @@ h4{
 	color: #1F2041;
 }
 #info{
-	margin:-15px 0px 10px 20px;
+	margin:-15px 0px 10px 30px;
 	font-size: 12px;
 	line-height: 14px;
 	width:270px;
@@ -334,6 +334,7 @@ h4{
 	width:265px;
 	padding:0px;
 	margin:10px 0px 15px 0px;
+	z-index:1;
 }
 .ui-slider.ui-slider-horizontal {
 	position: relative;
@@ -369,11 +370,16 @@ h4{
 }
 
 input[type=checkbox] {
-  	display:none;
+  	position:relative;
+  	left:0px;
+  	z-index: 1;
+  	opacity: 0;
 }
-#check {
+#check{
   position: relative;
-  padding: 0px 0px 0px 28px;
+}
+#check span{
+	margin:2px 0px 0px 10px;
 }
 #check span:before {
   content: "";
@@ -381,7 +387,7 @@ input[type=checkbox] {
   width: 18px;
   height: 18px;
   background: #fff;
-  margin-right: 5px;
+  margin-right: -5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   left: 0px;
@@ -392,8 +398,6 @@ input[type=checkbox] {
   content: "";
   width: 18px;
   height: 18px;
-  left: 0px;
-  top: 0px;
   border:1px solid #BC9CFF;
 }
 #check input:checked ~ span:after {
@@ -437,6 +441,7 @@ input[type=checkbox] {
 	font-family:Montserrat, Arial, Helvetica, sans-serif;
 	color:#BC9CFF;
 	padding:10px 16px 25px 16px;
+	z-index:2;
 }
 .ui-datepicker-header {	
 	background: white;
