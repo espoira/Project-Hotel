@@ -219,6 +219,39 @@ table p{
 	color: #BC9CFF;
 }
 
+table img{
+	cursor:pointer;
+}
+#watching{
+	position:relative;
+	top:-134px;
+	left:212px;
+}
+label input[type=radio] {
+	display:none;
+}
+#watching span {
+  position: relative;
+  padding-left:6px;
+}
+#watching span:before {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  left: 0px;
+  top: 0px;
+}
+#watching input:checked ~ span:before {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border:none;
+}
+
+
 #copyright{
 	margin: 20px 0px 24px 105px;
 	line-height: 17px;
@@ -322,7 +355,7 @@ h4{
 	width:270px;
 }
 .smalltext{
-	left:-20px;
+	left:-30px;
 	position:relative;
 }
 #diapazon{
@@ -354,6 +387,7 @@ h4{
 }
 .ui-slider .ui-slider-handle {
  	margin-top: -1px;
+ 	margin-left: -5px;
 	font-size: 5px;
     border-radius: 50%;
     border: 2px solid white; 
@@ -414,6 +448,7 @@ input[type=checkbox] {
 	top:1px;
 	font-family: Font Awesome;
 	content: "\f00c";
+	color:#8BA4F9;
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -421,13 +456,13 @@ input[type=checkbox] {
 
 #pages{
 	position:relative;
-	left:8px;
+	left:6px;
 }
 #pages span{
 	position:relative;
 }
 .vars{
-	left:-8px;
+	left:-6px;
 }
 .circle-left:before {
 	position: absolute;
@@ -441,7 +476,7 @@ input[type=checkbox] {
 .circle-left:after {
 	position: relative;
 	top:8px;
-	left:-38px;
+	left:-37px;
 	content: "1";
 	color:#fff;
 }
@@ -456,7 +491,7 @@ input[type=checkbox] {
 .circle-right:after {
 	position: absolute;
 	top:-17px;
-	left:12px;
+	left:10px;
 	content:"\02ff";
 	color:#fff;
 	font-size:54px;
@@ -472,7 +507,7 @@ input[type=checkbox] {
 }
 .number{
 	top:8px;
-	left:-12px;
+	left:-10px;
 	margin-right:4px;
 }
 
