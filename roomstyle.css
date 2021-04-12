@@ -194,6 +194,7 @@ td ul li:before{
 	font-size:26px;
 	line-height: 12px;
 	margin:0px 8px 0px -24px;
+	color:#ccc;
 	color:rgba(31, 32, 65, 0.25);
 }
 ul li:first-child {
@@ -414,6 +415,7 @@ select option:nth-child(9){
 	font-size: 48px;
 	line-height:40.8px;
 	margin:0px 15px 0px 7px;
+	color:#BC9CFF;
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -450,7 +452,7 @@ tr:first-child .otziv {
 	margin:45px 0px 0px 35px;
 	line-height:2px;
 }
-.first:before{
+.punkt:before{
 	position:relative;
 	top:2px;
 	font-family:Font Awesome;
@@ -458,42 +460,27 @@ tr:first-child .otziv {
 	font-size:28px;
 	line-height: 12px;
 	margin:0px 4px 0px -16px;
+}
+#first:before{
+	color:#FFBA9C;
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFE39C), to(#FFBA9C));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.second:before{
-	position:relative;
-	top:2px;
-	font-family:Font Awesome;
-	content:"\25CF";
-	font-size:28px;
-	line-height: 12px;
-	margin:0px 4px 0px -16px;
+#second:before{
+	color:#6FCF97;
 	background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.third:before{
-	position:relative;
-	top:2px;
-	font-family:Font Awesome;
-	content:"\25CF";
-	font-size:28px;
-	line-height: 12px;
-	margin:0px 4px 0px -16px;
+#third:before{
+	color:#BC9CFF;
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.none:before{
-	position:relative;
-	top:2px;
-	font-family:Font Awesome;
-	content:"\25CF";
-	font-size:28px;
-	line-height: 12px;
-	margin:0px 4px 0px -16px;
+#none:before{
+	color: gray;
 	background: -webkit-gradient(linear, left top, left bottom, from( #CCCCCC), to(#1F2041));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
