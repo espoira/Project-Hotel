@@ -28,6 +28,7 @@ header{
 	height: 44.77px;
 	float:left;
 	margin-bottom:-90px;
+	cursor:pointer;
 }
 #logoText{
 	float:left;
@@ -49,7 +50,7 @@ label,option
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 15px;
-	color:black;
+	color: #1F2041;
 }
 ul{
 	list-style-type:none;
@@ -65,6 +66,7 @@ a{
 	border:none;
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
+	cursor:pointer;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -226,6 +228,7 @@ hr{
 i{
 	font-style: normal;
 	margin-right:20px;
+	cursor:pointer;
 }
 
 select{
@@ -259,10 +262,16 @@ select option:first-child{
 	content:"\f107";
 }
 #right:after{
-	top:10px;
-	content:"\f061";
-	content:"\279C";
+	position:relative;
+	top:-12px;
+	left:-12px;
+	content:"\02ff";
 	color:white;
+	font-size:54px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 select option:nth-child(9){
 	color:#BC9CFF;
@@ -287,4 +296,3 @@ select option:nth-child(9){
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.5);
 }
-
