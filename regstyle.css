@@ -30,13 +30,9 @@
 	margin-top:-52px;
 }
 #right:after{
-	top:80px;
+	top:58px;
 }
 
-/*#select input{
-	width:18px;
-	margin-top:-8px;
-}*/
 .reg span{
 	float:left;
 	margin:-10px 20px 7px 0px;
@@ -86,10 +82,6 @@ label input[type=radio] {
   top: 0px;
 }
 
-/*#vkl input{
-	width:12px;
-	margin-top:-12px;
-}*/
 #vkl span {
   margin:-15px 0px 0px 0px;
   position: relative;
