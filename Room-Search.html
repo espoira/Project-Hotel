@@ -28,29 +28,8 @@
 
 		<link rel="stylesheet" href="js/base_jquery-ui.css" type="text/css">	
 		<script src="js/jquery-ui.js"></script>
-		<script>
-				$.datepicker.regional['ru'] = {
-				closeText: 'Закрыть',
-				prevText: 'Предыдущий',
-				nextText: 'Следующий',
-				currentText: 'Сегодня',
-				monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-				monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-				dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-				dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-				dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-				weekHeader: 'Не',
-				dateFormat: 'dd.mm.yy',
-				firstDay: 1,
-				isRTL: false,
-				showMonthAfterYear: false,
-				yearSuffix: ''
-			};
-			$.datepicker.setDefaults($.datepicker.regional['ru']);
-	
-		</script>
+		<script  src="js/datepicker-loc.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="datepicker-style.css" type="text/css">
-		
 		<link rel="stylesheet" href="roomselect.css" type="text/css">
 
 	</head>
@@ -88,10 +67,10 @@
 			<div>
 			
 				<label class="arrow">Даты пребывания в отеле<br>
-					<input id="dates" type="text" value="19 авг - 23 авг" name="dates"/>
+					<input id="dates" type="text" name="dates"/>
 						<script>
 							$(function(){
-								$("#dates").datepicker();
+								$("#dates").datepicker({minDate:0});
 							});
 						</script>
 				</label>
@@ -113,7 +92,7 @@
 				</label>
 				
 				<label id="diapazon">Диапазон цены<br></label>
-				<span class="costs">5000Р - 10 000&#8381;</span>
+				<span class="costs">5000&#8381; - 10 000&#8381;</span>
 				<div id="costs"></div><br>			
 				<p id="info" class="smalltext">Стоимость за сутки пребывания в номере</p>
 				
@@ -571,7 +550,10 @@
 				 <li>Подписка</li> 
 				 <li><p>Получайте специальные<br>
 						предложения и новости сервиса</p></li>
-				 <li><input type="text" value="Email &rarr;"/></li>
+				 <li>
+				 	<label id="footer-right"></label>
+				 	<input type="text" value="Email"/>
+				 </li>
 			   </ul>
 			   
 			   <hr>
