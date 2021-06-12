@@ -48,6 +48,7 @@ header{
 	height: 44.77px;
 	float:left;
 	margin:0px 0px -90px 0px;
+	cursor:pointer;
 }
 #logoText{
 	float:left;
@@ -79,6 +80,7 @@ a{
 	border:none;
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
+	cursor:pointer;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -144,8 +146,9 @@ footer ul li p{
 	line-height: 24px;
 }
 footer input{
-	width:210px;
+	width:230px;
 	color: rgba(31, 32, 65, 0.25);
+	padding:10px 12px 10px 12px;
 }
 footer ul{
 	margin-bottom:90px;
@@ -344,6 +347,7 @@ hr{
 i{
 	font-style: normal;
 	margin-right:20px;
+	cursor:pointer;
 }
 
 select{
@@ -407,6 +411,25 @@ select option:nth-child(9){
 	font-size: 24px;
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.5);
+}
+#footer-right{
+	margin-bottom:-96px;
+	display:block;
+}
+#footer-right:after{
+	position:relative;
+	top:-4px;
+	left:224px;
+	content:"\02ff";
+	color:#BC9CFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:54px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 #pic:after{
@@ -485,3 +508,35 @@ tr:first-child .otziv {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+#footer-right{
+	margin-bottom:-96px;
+	display:block;
+}
+#footer-right:after{
+	position: relative;
+	top:18px;
+	left:226px;
+	font-family: Material Icons-1;
+	content:"\ea3c";
+	font-size:18px;
+	color:#BC9CFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.ui-datepicker-header {
+	margin-top:5px;
+	margin-bottom:-15px;
+}
+.ui-datepicker{
+	height:300px;
+}
+.ui-datepicker-prev:before{
+	left:-5px;
+}
+.ui-datepicker-next:after{
+	left:77px;
+}
+
