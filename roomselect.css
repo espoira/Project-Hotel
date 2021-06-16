@@ -2,6 +2,10 @@
   font-family: 'Font Awesome';
   src: url("fonts/FontAwesome.otf");
 }
+@font-face {
+  font-family: 'Material Icons';
+  src: url("fonts/IcoMoon-Free.ttf");
+}
 
 body{
 	width:1440px;
@@ -330,10 +334,11 @@ select option:nth-child(9){
 	visibility:hidden;
 }
 .arrow:after,
+.arrow-comfort:after,
 .arrow-show:after{
 	position:relative;
-	top:-58px;
-	right:-8px;
+	top:-60px;
+	right:-14px;
 	float:right;
 	font-family: Font Awesome;	
 	content:"\f107";
@@ -343,8 +348,11 @@ select option:nth-child(9){
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.5);
 }
+.arrow-comfort:after{
+	top:-68px;
+}
 .arrow-show:after{
-	left:23px;
+	left:30px;
 	top:-22px;
 }
 
@@ -524,16 +532,46 @@ input[type=checkbox] {
 }
 #footer-right:after{
 	position: relative;
-	top:-76px;
-	left:224px;
-	content:"\02ff";
+	top:-65px;
+	left:226px;
+	font-family: Material Icons;
+	content:"\ea3c";
+	font-size:18px;
 	color:#BC9CFF;
 	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size:54px;
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+}
+
+#listname{
+	position:relative;
+	top:5px;
+}
+.firstitem{
+	margin-top:25px;
+}
+.udobstva{
+	position:relative;
+	top:-8px;
+}
+#spisok{
+	margin-top:-48px;
+	display:none;
+}
+#doplist{
+	position:relative;
+	top:-30px;
+	left:230px;
+	opacity:0;
+	background:#fff;
+	border:#fff;
+}
+#doplist:before{
+	font-family: Font Awesome;	
+	content:"\f106";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.5);
 }

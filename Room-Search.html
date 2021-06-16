@@ -27,10 +27,26 @@
 			</script>
 
 		<link rel="stylesheet" href="js/base_jquery-ui.css" type="text/css">	
-		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery-ui.js" type="text/javascript"></script>
 		<script  src="js/datepicker-loc.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="datepicker-style.css" type="text/css">
 		<link rel="stylesheet" href="roomselect.css" type="text/css">
+
+		<script>
+			var flag = false;
+			function showlist(){
+				if (flag==false) {
+					document.getElementById('spisok').style.display = 'block';
+					document.getElementById('doplist').style.opacity = 1;
+					flag = true;
+				}
+				else {
+					document.getElementById('spisok').style.display = 'none';
+					document.getElementById('doplist').style.opacity = 0;
+					flag = false;
+				};
+			};
+		</script>
 
 	</head>
 	
@@ -97,8 +113,8 @@
 				<p id="info" class="smalltext">Стоимость за сутки пребывания в номере</p>
 				
 				<br>
-				<label>Правила дома<br></label>
-				   <p id="check"><input type="checkbox" name="rules" value=""><span> Можно курить</span></p>
+				<label id="listname">Правила дома<br></label>
+				   <p id="check" class="firstitem"><input type="checkbox" name="rules" value=""><span> Можно курить</span></p>
 				   <p id="check"><input type="checkbox" name="rules" value="" checked><span> Можно с питомцами</span></p>
 				   <p id="check"><input type="checkbox" name="rules" value="" checked><span> Можно пригласить гостей<br></span>
 				   <span>(до 10 человек)</span></p>
@@ -110,8 +126,8 @@
 				<p id="info">На 1 этаже вас встретит специалист<br> и проводит до номера.</p>
 				<br>
 
-				<label class="arrow">Удобства номера<br><br>
-					<select> 
+				<label class="arrow-comfort" id="listname">Удобства номера<br><br>
+					<select class="udobstva"> 
 						<option value="">2 спальни, 2 кровати...</option>
 						<option class="empty" disabled></option>
 						<option value="">Спальни</option>
@@ -126,13 +142,16 @@
 					</select>				
 				</label>
 
-				<label class="arrow-show">Дополнительные удобства<br></label>
+				<label class="arrow-show" id="listname">Дополнительные удобства<br></label>
+				<input type="button" id="doplist" onclick="showlist();">
+				<div id="spisok">
 					<p id="check"><input type="checkbox" name="add"><span> Завтрак</span></p>
 				   	<p id="check"><input type="checkbox" name="add" checked><span> Письменный стол</span></p>
 				   	<p id="check"><input type="checkbox" name="add" checked><span> Стул для кормления</span></p>
 				   	<p id="check"><input type="checkbox" name="add" checked><span> Кроватка</span></p>
 				   	<p id="check"><input type="checkbox" name="add"><span> Телевизор</span></p>
-					<p id="check"><input type="checkbox" name="add"><span> Шампунь</span></p>			
+					<p id="check"><input type="checkbox" name="add"><span> Шампунь</span></p>
+				</div>		
 
 			</div>
 			
