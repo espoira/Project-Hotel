@@ -67,6 +67,7 @@ a{
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
 	cursor:pointer;
+	outline:none;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -261,9 +262,11 @@ label input[type=radio] {
 #copyright{
 	margin: 20px 0px 24px 105px;
 	line-height: 17px;
+	clear:both;
 }
 hr{
-	width:100%;
+	width:1440px;
+	clear:both;
 }
 .li_arrow{
 	position:relative;
@@ -404,6 +407,7 @@ h4{
 	font-size: 5px;
     border-radius: 50%;
     border: 2px solid white; 
+    outline:none;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 .ui-slider .ui-slider-range {
@@ -559,14 +563,20 @@ input[type=checkbox] {
 	display:none;
 }
 #doplist{
+	opacity:0;
 	position:relative;
 	top:-30px;
 	left:230px;
-	opacity:0;
+}
+#show-list{
 	background:#fff;
 	border:#fff;
+	outline:none;
 }
-#doplist:before{
+#doplist:after{
+	position:relative;
+	top:14px;
+	left:-36px;
 	font-family: Font Awesome;	
 	content:"\f106";
 	font-style: normal;
