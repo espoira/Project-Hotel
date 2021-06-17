@@ -52,7 +52,7 @@
 					<input id="dates" class="datastart" type="text" value="ДД.ММ.ГГГГ" name="datastart"/>
 					<script>
 							$(function(){
-								$(".datastart").datepicker();
+								$(".datastart").datepicker({minDate:0});
 							});
 					</script>
 				</label>
@@ -60,7 +60,7 @@
 					<input id="dates" class="datafinish" type="text" value="ДД.ММ.ГГГГ" name="datafinish"/>
 					<script>
 							$(function(){
-								$(".datafinish").datepicker();
+								$(".datafinish").datepicker({minDate:0});
 							});
 					</script>
 				</label>
@@ -134,7 +134,10 @@
 				 <li>Подписка</li> 
 				 <li><p>Получайте специальные<br>
 						предложения и новости сервиса</p></li>
-				 <li><input type="text" value="Email &rarr;"/></li>
+				 <li>
+				 	<label id="footer-right"></label>
+					<input type="text" value="Email"/>
+				 </li>
 			   </ul>
 			   
 			   <hr>

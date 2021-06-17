@@ -2,6 +2,10 @@
   font-family: 'Font Awesome';
   src: url("fonts/FontAwesome.otf");
 }
+@font-face {
+  font-family: 'Material Icons';
+  src: url("fonts/IcoMoon-Free.ttf");
+}
 
 body{
 	width:1440px;
@@ -138,8 +142,9 @@ footer ul li p{
 	line-height: 24px;
 }
 footer input{
-	width:210px;
+	width:230px;
 	color: rgba(31, 32, 65, 0.25);
+	padding:10px 12px 10px 12px;
 }
 form{
 	position: absolute;
@@ -183,9 +188,11 @@ form input, select
 #copyright{
 	margin: 20px 0px 24px 105px;
 	line-height: 17px;
+	clear:both;
 }
 hr{
 	width:100%;
+	clear:both;
 }
 .li_arrow{
 	position:relative;
@@ -295,4 +302,20 @@ select option:nth-child(9){
 	font-size: 24px;
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.5);
+}
+#footer-right{
+	margin-bottom:-96px;
+	display:block;
+}
+#footer-right:after{
+	position: relative;
+	top:5px;
+	left:226px;
+	font-family: Material Icons;
+	content:"\ea3c";
+	font-size:18px;
+	color:#BC9CFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
