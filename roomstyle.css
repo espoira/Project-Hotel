@@ -38,7 +38,7 @@ img{
 }
 
 header{
-	padding:15px 0px 15px 100px;
+	padding:15px 0px 65px 100px;
 	height:50px;
 }
 #logo{
@@ -81,6 +81,7 @@ a{
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
 	cursor:pointer;
+	outline:none;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -104,7 +105,7 @@ a{
 	margin-left:2px;
 	height:36px;
 }
-.border-grad{
+#border-grad{
 	margin:4px 25px 0px 5px;
 	border-radius:22px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -163,9 +164,11 @@ p{
 }
 table{
 	display:block;
+	clear:both;
 	position:relative;
 	top:35px;
 	margin:50px 50px 50px 130px;
+	width:1300px;
 }
 td{
 	padding:10px 30px 0px 0px;
@@ -247,6 +250,7 @@ h1{
 #dates{
 	margin-right:20px;
 	width: 108px;
+	position:relative;
 }
 label{
 	margin-top:-5px;
@@ -302,9 +306,11 @@ h3 span{
 #copyright{
 	margin: 20px 0px 24px 105px;
 	line-height: 17px;
+	clear:both;
 }
 hr{
 	width:100%;
+	clear:both;
 }
 .li_arrow{
 	position:relative;
@@ -527,16 +533,21 @@ tr:first-child .otziv {
 }
 
 .ui-datepicker-header {
-	margin-top:5px;
-	margin-bottom:-15px;
+	margin:5px 0px -15px 0px;
 }
 .ui-datepicker{
-	height:300px;
+	height:350px;
+	width:250px;
 }
 .ui-datepicker-prev:before{
 	left:-5px;
 }
 .ui-datepicker-next:after{
-	left:77px;
+	left:60px;
 }
-
+.ui-state-default,
+.ui-button
+{
+	width:28.5px;
+	height:25px;
+}
