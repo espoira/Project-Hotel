@@ -71,6 +71,7 @@ a{
 	border-radius:22px;
 	padding:12px 20px 12px 20px;
 	cursor:pointer;
+	outline:none;
 	
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -161,8 +162,7 @@ form{
 	border-radius: 4px;
 }
 h1{
-	margin-top:-5px;
-	margin-bottom:18px;
+	margin:5px 0px 25px 0px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 29px;
@@ -173,9 +173,8 @@ h1{
 	width: 108px;
 }
 label{
-	margin-top:8px;
-	margin-bottom:25px;
 	float:left;
+	margin-top:0px;
 }
 form input, select
 {
@@ -239,7 +238,7 @@ i{
 }
 
 select{
-	margin-bottom:20px;
+	margin:15px 0px 27px 0px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -250,7 +249,7 @@ select option:first-child{
 }
 .arrow{
 	width:318px;
-	margin-bottom:-25px;
+	margin-bottom:-35px;
 }
 .arrow:after{
 	position:relative;
@@ -309,7 +308,7 @@ select option:nth-child(9){
 }
 #footer-right:after{
 	position: relative;
-	top:5px;
+	top:12px;
 	left:226px;
 	font-family: Material Icons;
 	content:"\ea3c";
@@ -319,3 +318,10 @@ select option:nth-child(9){
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.ui-state-default,
+.ui-button
+{
+	width:28.5px;
+	height:25px;
+}
+

@@ -158,7 +158,7 @@ footer #logo, footer #logoText {
 	margin-top:-10px;
 }
 
-p{
+table p{
 	font-weight:bold;
 	margin-top:0px;
 }
@@ -250,7 +250,6 @@ h1{
 #dates{
 	margin-right:20px;
 	width: 108px;
-	position:relative;
 }
 label{
 	margin-top:-5px;
@@ -357,7 +356,7 @@ i{
 }
 
 select{
-	margin-bottom:20px;
+	margin:15px 0px 20px 0px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -368,7 +367,7 @@ select option:first-child{
 }
 .arrow{
 	width:318px;
-	margin-bottom:-25px;
+	margin-bottom:-35px;
 }
 .arrow:after{
 	position:relative;
@@ -388,7 +387,7 @@ select option:first-child{
 }
 #right:after{
 	position:relative;
-	top:-8px;
+	top:-7px;
 	left:-12px;
 	content:"\02ff";
 	color:white;
