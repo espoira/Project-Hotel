@@ -31,6 +31,9 @@
 		<script  src="js/datepicker-loc.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="datepicker-style.css" type="text/css">
 		<link rel="stylesheet" href="roomselect.css" type="text/css">
+		<script src="js/Detect.js" type="text/javascript"></script>
+		<script src="js/browser-differences.js" type="text/javascript"></script>
+
 
 		<script>
 			var flag = false;
@@ -83,7 +86,7 @@
 			<div>
 			
 				<label class="arrow">Даты пребывания в отеле<br>
-					<input id="dates" type="text" name="dates"/>
+					<input id="dates" type="text" value="ДД.ММ.ГГГГ - ДД.ММ.ГГГГ" name="dates"/>
 						<script>
 							$(function(){
 								$("#dates").datepicker({minDate:0});
